@@ -1,0 +1,120 @@
+/* Importação de fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Cor do texto claro */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #00aaff; /* Cor de links */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4dc2ff; /* Cor ao passar o mouse */
+}
+
+/* Container principal para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1f1f1f;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-weight: 300;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Estilo para a seção de projetos */
+#projetos {
+    background-color: #1a1a1a;
+}
+
+.projeto {
+    background-color: #242424;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.projeto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.projeto h3 {
+    margin-top: 0;
+    color: #00aaff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav a {
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
